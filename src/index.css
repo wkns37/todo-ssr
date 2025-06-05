@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #0d0d0d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    text-align: center;
+    width: 600px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > h1 {
+    color: #00ff00;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.input-container {
+    width: 450px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.input-container > input {
+    background-color: #0d0d0d;
+    color: #e0ffe0;
+    font-size: 1rem;
+    padding: 0.5rem;
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.input-container > button {
+    height: 100%;
+    padding: 0 1rem;
+    background-color: #00ff00;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.input-container > button:hover {
+    background-color: #00cc00;
+}
+
+ul {
+    list-style: none;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #00ff00;
+    border-left: 4px solid #00ff00;
+    border-radius: 4px;
+    padding: 8px 8px;
+    background-color: #524f4f;
+    color: #e0ffe0;
+}
+
+li > span {
+    word-break: break-word;
+    margin-right: 10px;
+}
+
+li > button {
+    font-weight: bold;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+li > button:hover {
+    background-color: hsl(0, 100%, 40%); /* red for delete hover */
+}
